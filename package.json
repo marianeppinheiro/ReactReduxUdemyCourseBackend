@@ -1,19 +1,29 @@
 {
-  "name": "testing_udemy_server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/marianeppinheiro/ReactReduxUdemyCourseBackend.git"
-  },
-  "author": "Mariane Pires Pinheiro",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marianeppinheiro/ReactReduxUdemyCourseBackend/issues"
-  },
-  "homepage": "https://github.com/marianeppinheiro/ReactReduxUdemyCourseBackend#readme"
+	"name": "testing_udemy_server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/marianeppinheiro/ReactReduxUdemyCourseBackend.git"
+	},
+	"author": "Mariane Pires Pinheiro",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/marianeppinheiro/ReactReduxUdemyCourseBackend/issues"
+	},
+	"homepage": "https://github.com/marianeppinheiro/ReactReduxUdemyCourseBackend#readme",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"express": "^4.16.3",
+		"mongoose": "^5.3.3",
+		"morgan": "^1.9.1"
+	},
+	"devDependencies": {
+		"nodemon": "^1.17.5"
+	}
 }
