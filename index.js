@@ -5,6 +5,7 @@ var http = require('http');
 var router = require('./router.js');
 var mongoose = require('mongoose');
 var app = express();
+var cors = require('cors');
 
 mongoose.connect('mongodb://localhost:auth/auth', { useNewUrlParser: true });
 
@@ -15,6 +16,7 @@ server.listen(port);
 console.log(`We are on port: ${port}`);
 
 app.use(morgan('combined')); // Morgan is a logging middleware
+app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 
 router(app);
